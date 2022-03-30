@@ -37,7 +37,7 @@
     <th>
     <h2>Formula</h2>  
     <h3>semiperimeter s = (ᵃ ⁺ ᵇ ⁺ ᶜ⁄₂)</h3>
-      <h4>Area A = square root of s (s - a)(s - b)(s - c)</h4>
+    <h4>Area A = square root of s (s - a)(s - b)(s - c)</h4>
     </th>
     </tr>
         </table>
@@ -45,8 +45,8 @@
 <form action="#">
   <p>a</p>
   <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a">
-    <label class="mdl-textfield__label" for="a">enter a value here...</label>
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-a-of-triangle">
+    <label class="mdl-textfield__label" for="side-a-of-triangle">enter a value here...</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>
 </form>
@@ -54,8 +54,8 @@
 <form action="#">
   <p>b</p>
   <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b">
-    <label class="mdl-textfield__label" for="b">enter b value here...</label>
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-b-of-triangle">
+    <label class="mdl-textfield__label" for="side-b-of-triangle">enter b value here...</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>
 </form>
@@ -63,8 +63,8 @@
 <form action="#">
   <p>c</p>
   <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="c">
-    <label class="mdl-textfield__label" for="c">enter c value here...</label>
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-c-of-triangle">
+    <label class="mdl-textfield__label" for="side-c-of-triangle">enter c value here...</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>
 </form>
@@ -72,7 +72,20 @@
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="calculate()"> 
   Calculate
 </button>
- <br />
+    
+        <!-- Numeric Textfield -->
+<form action="#">
+  <p>semi perimeter</p>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="semiperimeter-of-a-triangle">
+    <label class="mdl-textfield__label" for="semiperimeter-of-a-triangle">enter semiperimeter here...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>  
+        <!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="calculate()"> 
+  Calculate
+</button>
      <p>
         <div id="answers">
           <div id="area"></div>

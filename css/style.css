@@ -3,11 +3,11 @@
 * This file contains the CSS for index.html
 */
 
-.header {
+ header {
   background-color: #af1818;
+  font-size: 30pt;
   text-align: center;
   padding: 20px;
-  text-align: center;
 }
 
 body {
@@ -17,11 +17,21 @@ body {
 }
 
 p {
-  color: #ac1b46;
+  color: #393db1;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #393db1;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 h3 {
-  color: #822642;
+  color: #393db1;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  color: #393db1;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  
 }
