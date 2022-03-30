@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- ICS20-Unit2-03-HTML-User_Input -->
+<!-- ICS20-Unit2-04-HTML-User_Input -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="XXX" />
+    <meta name="description" content="Area of a Triangle" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Joanne Santhosh" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,12 +15,71 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-pink.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-indigo.min.css" /> 
     <link rel="stylesheet" href="./css/style.css">
-    <title>XXX</title>
+    <title>Area of a Triangle</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+       <div class="mdl-layout__header-row">
+           </div>
+        <span class="mdl-layout-title">Area of a Triangle</span>
+      </header>
+      <main class="mdl-layout__content">
+        <table>
+          <tr>
+        <th>
+          <img src="./Screen Shot 2022-03-30 at 6.28.54 PM.png" alt="triangle" width="75%" height="auto"/>
+      </th>
+    <th>
+    <h2>Formula</h2>  
+    <h3>semiperimeter s = (ᵃ ⁺ ᵇ ⁺ ᶜ⁄₂)</h3>
+      <h4>Area A = square root of s (s - a)(s - b)(s - c)</h4>
+    </th>
+    </tr>
+        </table>
+        <!-- Numeric Textfield -->
+<form action="#">
+  <p>a</p>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a">
+    <label class="mdl-textfield__label" for="a">enter a value here...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+         <!-- Numeric Textfield -->
+<form action="#">
+  <p>b</p>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b">
+    <label class="mdl-textfield__label" for="b">enter b value here...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+        <!-- Numeric Textfield -->
+<form action="#">
+  <p>c</p>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="c">
+    <label class="mdl-textfield__label" for="c">enter c value here...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+        <!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="calculate()"> 
+  Calculate
+</button>
+ <br />
+     <p>
+        <div id="answers">
+          <div id="area"></div>
+          </div>
+        </p>
+      </main>
+    </div>
   </body>
 </html>
+        
