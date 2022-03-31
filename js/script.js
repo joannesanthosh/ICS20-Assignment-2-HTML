@@ -16,10 +16,10 @@ function calculate() {
   const sideCOfTriangle = parseInt(document.getElementById('side-c-of-triangle').value)
 
   // process
-  const semiPerimeterOfATriangle = (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle) / 2
+  const semiPerimeterOfATriangle = 2 / (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle)
   
   // output
-  document.getElementById('semiperimeter').innerHTML = 'Semi perimeter is: ' + semi perimeter + ' cm '
+  document.getElementById('semiperimeter').innerHTML = 'The Semi perimeter is: ' + semi perimeter + ' cm '
   }
 
 function calculate() {
