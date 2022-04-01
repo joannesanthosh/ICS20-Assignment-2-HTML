@@ -7,7 +7,7 @@
 'use strict'
 
 /**
- * This function calculates the area of a triange.
+ * This function calculates the area of a triangle.
  */
 function calculate() {
   // input
@@ -16,23 +16,8 @@ function calculate() {
   const sideCOfTriangle = parseInt(document.getElementById('side-c-of-triangle').value)
 
   // process
-  const semiPerimeterOfATriangle = 2 / (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle)
+  const semiPerimeterOfATriangle = (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle)
   
   // output
-  document.getElementById('semiperimeter').innerHTML = 'The Semi perimeter is: ' + semi perimeter + ' cm '
+  document.getElementById('semiperimeter-of-a-triangle').innerHTML = 'The Semi perimeter is: ' + semiPerimeterOfATriangle + ' cm '
   }
-
-function calculate() {
-  // input
-  const semiperimeterOfATriangle = parseInt(document.getElementById('semi-perimeter-of-a-triangle').value)
-  const sideAOfTriangle = parseInt(document.getElementById('side-a-of-triangle').value)
-  const sideBOfTriangle = parseInt(document.getElementById('side-b-of-triangle').value)
-  const sideCOfTriangle = parseInt(document.getElementById('side-c-of-triangle').value)
-
-  // process
-  const area = console (Math.sqrt(semiperimeterOfATriangle * (semiperimeterOfATriangle - sideAOfTriangle) * (semiperimeterOfATriangle - sideBOfTriangle) * (semiperimeterOfATriangle - sideCOfTriangle)))
-  
-  // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
-  }
-
