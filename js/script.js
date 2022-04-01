@@ -10,6 +10,7 @@
  * This function calculates the area of a triangle.
  */
 function calculate() {
+  console.log("Calculate")
   // input
   const sideAOfTriangle = parseInt(document.getElementById('side-a-of-triangle').value)
   const sideBOfTriangle = parseInt(document.getElementById('side-b-of-triangle').value)
@@ -17,10 +18,15 @@ function calculate() {
 
   // process
   const semiPerimeterOfATriangle = (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle) / 2
-  const areaOfATriangle = Math.sqrt(semiperimeterOfATriangle * (semiperimeterOfATriangle - sideAOfTriangle) * (semiperimeterOfATriangle - sideBOfTriangle) * (semiperimeterOfATriangle - sideCOfTriangle))
+  const areaOfATriangle = Math.sqrt(semiPerimeterOfATriangle * (semiPerimeterOfATriangle - sideAOfTriangle) * (semiPerimeterOfATriangle - sideBOfTriangle) * (semiPerimeterOfATriangle - sideCOfTriangle))
 
-  
-  // output
-  document.getElementById('semiperimeter-of-a-triangle').innerHTML = 'The Semi perimeter is: ' + semiPerimeterOfATriangle + ' cm '
-  document.getElementById('area-of-a-triangle').innerHTML = 'The area of a triangle is: ' + areaOfATriangle + ' cm² '
+  console.log(sideAOfTriangle)
+  console.log(sideBOfTriangle)
+  console.log(sideCOfTriangle)
+  console.log(semiPerimeterOfATriangle)
+  console.log(areaOfATriangle)
+
+   // output
+   document.getElementById('area-of-a-triangle').innerHTML = 'The area of a triangle is: ' + areaOfATriangle + ' cm² ' 
+   document.getElementById('semi-perimeter-of-a-triangle').innerHTML = 'The Semi perimeter is: ' + semiPerimeterOfATriangle + ' cm '
 }
