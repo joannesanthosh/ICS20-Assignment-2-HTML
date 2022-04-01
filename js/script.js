@@ -16,8 +16,11 @@ function calculate() {
   const sideCOfTriangle = parseInt(document.getElementById('side-c-of-triangle').value)
 
   // process
-  const semiPerimeterOfATriangle = (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle)
+  const semiPerimeterOfATriangle = (sideAOfTriangle + sideBOfTriangle + sideCOfTriangle) / 2
+  const areaOfATriangle = Math.sqrt(semiperimeterOfATriangle * (semiperimeterOfATriangle - sideAOfTriangle) * (semiperimeterOfATriangle - sideBOfTriangle) * (semiperimeterOfATriangle - sideCOfTriangle))
+
   
   // output
   document.getElementById('semiperimeter-of-a-triangle').innerHTML = 'The Semi perimeter is: ' + semiPerimeterOfATriangle + ' cm '
-  }
+  document.getElementById('area-of-a-triangle').innerHTML = 'The area of a triangle is: ' + areaOfATriangle + ' cm² '
+}
